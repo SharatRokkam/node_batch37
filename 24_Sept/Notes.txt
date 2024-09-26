@@ -1,0 +1,99 @@
+ **** What is Node.js ? ****
+
+Node.js is a runtime environment that allows you to run JavaScript code outside of a browser. It’s built on Chrome’s V8 JavaScript engine and is widely used for building server-side applications.	
+
+
+****** What is the V8 JavaScript Engine? *****
+The V8 JavaScript engine is an open-source engine developed by Google, which compiles JavaScript into machine code, allowing it to run quickly and efficiently. V8 powers Google Chrome and is also used in Node.js to execute JavaScript on the server-side.
+
+
+**** Features of Nodejs ********: 
+1. Asynchronous and Event-Driven
+Asynchronous: Node.js performs tasks in the background without waiting for one to finish before starting another. This makes it very fast when dealing with multiple tasks like reading files or accessing databases.
+
+Event-Driven: Node.js uses events to manage its operations. When something happens (like data being received), an event is triggered to handle it.
+
+
+2. Non-Blocking I/O
+Node.js handles input/output (I/O) operations (like reading a file, or querying a database) in a non-blocking way. This means it doesn't pause the whole system while waiting for a task to complete; instead, it moves on to other tasks.
+
+
+3. Single-Threaded but Highly Scalable
+
+Even though Node.js runs on a single thread, it can manage thousands of tasks at the same time. This makes it highly scalable, meaning it can handle many users or requests efficiently.
+
+
+4. Fast Execution with the V8 Engine
+Node.js uses the V8 JavaScript Engine from Google Chrome, which converts JavaScript into machine code (low-level code the computer understands). This makes JavaScript run very fast in Node.js.
+
+5. Cross-Platform
+Node.js works on multiple platforms, like Windows, macOS, and Linux. You can write the same code, and it will run on any of these systems.
+
+6. Rich Ecosystem (npm)
+Node.js comes with npm (Node Package Manager), which has thousands of free libraries and modules. These can be easily installed and used to add extra features to your application, making development faster and easier.
+
+7. Great for Real-Time Applications
+Node.js is ideal for building real-time applications like chat apps or online games, where data needs to be shared and updated in real-time between many users.
+
+
+
+
+*** How to Execute Code in Node.js ***
+1. REPL (Read-Eval-Print Loop):
+REPL is an interactive environment where you can run JavaScript commands in Node.js. It works as follows:
+
+Read: Reads the input from the user.
+Eval: Evaluates the JavaScript code.
+Print: Prints the result.
+Loop: Repeats the process for the next command.
+
+
+2. Run Node.js Scripts from the Command Line:
+
+
+
+****** Modules and its types ***********
+
+In Node.js, a module is simply a reusable block of code that you can export and import into different parts of your application. Think of it like a toolbox where each tool (module) performs a specific task, and you can use those tools wherever needed in your code.
+
+1. Core Modules:
+
+These are built-in modules provided by Node.js. You don’t have to install them; they come with Node.js.
+
+Examples:
+fs (File System): Allows you to read and write files.
+http: Helps you create a server and handle requests.
+path: Works with file and directory paths.
+
+
+2. Local Modules:
+
+These are custom modules that you create yourself. You write some functionality in one file and use it in another by exporting and importing it.
+
+
+3. Third-Party Modules:
+
+These are modules created by other developers that you can install and use in your project. They are available via npm (Node Package Manager).
+
+
+
+Featuress of ES6:
+1.let and const 
+2. Arrow function
+3. Template literal
+4. Promises
+5. Classes
+6. Destructuring
+7. Modules
+8. Spread and REst operator
+9. Default Parameter
+
+
+var a = 2;
+
+function square(a){
+    return a * a;
+}
+
+var first = square(a)
+var second = square(3)
