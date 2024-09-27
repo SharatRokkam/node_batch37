@@ -1,0 +1,17 @@
+package and module
+--> package is collection of module (express and nodemon)
+--> Module can be any single file (index.js, notes.txt)
+
+
+Module : 
+3 Types:
+1. Core Module :  install X --> import ✔️
+2. Local Module : create your own module.
+3. Third Party Module : install import 
+
+Import and Export 
+Common JS --> const app = require('app')
+module.export = app;
+
+ES6 Module --> import app from app.js
+export const app;
