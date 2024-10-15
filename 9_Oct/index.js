@@ -1,54 +1,24 @@
 const express = require("express");
 const app = express();
-const morgan = require("morgan");
 
-app.use(morgan("dev"));
+const port = 8080;
 
-//Middleware
-// client and Server
+app.get("/demo", (req, res) => {
+  const { name, age, subject } = req.query;
+  console.log(req.query);
 
-//application level middleware
-// app.use((req, res, next) => {
-//   console.log(req.path, req.ip, req.method, req.hostname, new Date(), req.get("User-Agent"));
-// });
-
-//built in middlware
-//bodyParser
-// app.use(express.json())
-// app.use(express.urlencoded());
-// app.use(express.static("public"));
-
-//Route level middleware
-const auth = (req, res, next) => {
-  if (req.body.password == "123") {
-    next();
-  } else {
-    res.sendStatus(401);
-  }
-};
-
-// app.use(auth);
-
-//api - endpoint
-app.get("/", auth, (req, res) => {
-  // res.send("<h1> Hello World </h1>");
-
-  // res.get("Content-Type");
-  // res.sendFile()
-  res.json({ type: "get" });
+  res.send(req.query);
 });
 
-app.post("/", auth, (req, res) => {
-  res.json({ type: "post" });
+app.get("/demo/:name/:subject", (req, res) => {
+  const { name, subject } = req.params;
+
+  console.log(req.params);
+
+  res.send(req.params);
+  
 });
 
-app.put("/", (req, res) => {
-  res.json({ type: "put" });
-});
-app.delete("/", (req, res) => {
-  res.json({ type: "delete" });
-});
-
-app.listen(5000, () => {
-  console.log("server is running on port 5000");
+app.listen(port, () => {
+  console.log(`Server is running on ${port}`);
 });
