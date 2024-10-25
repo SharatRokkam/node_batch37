@@ -1,0 +1,42 @@
+
+1. Create a new database:
+Create a database named school.
+Verify that the school database is selected.
+
+
+2. Create a new collection:
+
+Inside the school database, create a collection named students.
+Insert documents into the collection:
+
+3.Insert the following documents into the students collection:
+
+Copy code
+{ name: "Alice Johnson", age: 15, grade: "10th", subjects: ["Math", "Science", "English"], attendance: 90 }
+{ name: "Bob Smith", age: 14, grade: "9th", subjects: ["Math", "History"], attendance: 85 }
+{ name: "Carol White", age: 16, grade: "11th", subjects: ["English", "Biology", "History"], attendance: 92 }
+{ name: "David Lee", age: 15, grade: "10th", subjects: ["Math", "Science"], attendance: 88 }
+
+
+4. Query the documents:
+
+Retrieve all students in the students collection.
+Find all students in the 10th grade.
+Query students who have "Math" as one of their subjects.
+List students with an attendance rate greater than 85.
+
+5. Update documents:
+
+Update Alice Johnson's attendance from 90 to 95.
+Add "Physical Education" to Bob Smith's list of subjects.
+
+6. Delete documents:
+
+Delete the student record for Carol White from the students collection.
+
+Bonus Challenge (Optional):
+
+Insert a new student with fields: name, age, grade, and an additional custom field of your choice (e.g., extraCurricularActivities, awards, etc.).
+
+Use a query to find all students who have this custom field.
+

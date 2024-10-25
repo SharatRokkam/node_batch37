@@ -1,0 +1,11 @@
+create a url-shortener application in backend....
+
+1. POST /url = generate new short url, and returns the shortened url in the format 
+example.com/random-id
+
+2. GET /:id : redirects the user to the original URL
+
+3. GET /url/analytics/:id = returns the clicks for the provided short id...
+
+
+www.google.com ->  /ljaflajlfja

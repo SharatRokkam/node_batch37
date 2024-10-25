@@ -12,7 +12,12 @@ app.use(express.json());
 
 //api - endpoint
 //http://localhost:5000/products
-//CRUD - Create,  Read,
+//CRUD - Create,  Read, Update and Delete
+
+// project - ecommerce -> products, users, recipes, restuarant , restaurtant,
+// MVC - Model View Controller
+// --> products.js, users.js, recipes.js
+// www.xyz.com/users
 
 app.post("/products", (req, res) => {
   //   console.log(req.body);
@@ -48,13 +53,11 @@ app.patch("/products/:id", (req, res) => {
 });
 
 app.delete("/products/:id", (req, res) => {
-    const id = +req.params.id;
-    const productIndex = products.findIndex((p) => p.id == id);
-    products.splice(productIndex, 2);
-    res.status(201).json();
-  });
-
-
+  const id = +req.params.id;
+  const productIndex = products.findIndex((p) => p.id == id);
+  products.splice(productIndex, 2);
+  res.status(201).json();
+});
 
 app.listen(5000, () => {
   console.log("server is running on port 5000");
