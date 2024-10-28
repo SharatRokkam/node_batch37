@@ -10,3 +10,11 @@ example.com/random-id
 
 www.google.com ->  /ljaflajlfja
 www.instagram.com --> /khkhh
+
+react - client side rendering
+
+server side rendering --> render different static or dynamic pages
+
+HTML, CSS, Image 
+
+backend - > full stack
