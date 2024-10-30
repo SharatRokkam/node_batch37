@@ -3,3 +3,14 @@ Create a folder....any name
 npm init -y
 
 npm i express nodemon cookie-parser bcryptjs jsonwebtoken mongoose ejs
+
+
+MongoDB 
+1. Indexing
+2. Replication
+3. Aggregation
+4. Sharding
+
+NodeJS/express
+
+1. Socket.io - real time notification
